@@ -75,18 +75,18 @@ public class LemonadeStandTests {
         assertEquals(0, lemonadeStand.getMoney(), 0.01);
     }
 
-    /*
+
     @Test
     public void testSellDiscountedLemonade() {
         LemonadeStand lemonadeStand = new LemonadeStand();
-        boolean result = lemonadeStand.sellLemonade(25);
+        boolean result = lemonadeStand.sellLemonade(1, 1, 1, 25);
         assertTrue(result);
         double normalPrice =
-            (Lemonade.defaultLemons * LemonadeStand.pricePerLemon) +
-            (Lemonade.defaultSugar * LemonadeStand.pricePerSugar) +
-            (Lemonade.defaultIce * LemonadeStand.pricePerIce);
+            (1 * LemonadeStand.pricePerLemon) +
+            (1 * LemonadeStand.pricePerSugar) +
+            (1 *  LemonadeStand.pricePerIce);
         double discount = normalPrice * 0.25;
-        assertEquals(normalPrice - discount, lemonadeStand.getMoney(), 0.01);
+        assertEquals(normalPrice - discount, 0.9, 0.01);
   }
-  */
+
 }
